@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Seasons:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="invitation">
+            <div class="olive-frame">
+                <div class="olive-frame-top"></div>
+                <div class="olive-frame-bottom"></div>
+            </div>
+            <div class="invitation-header">
+                <img src="./images/White Floral Watercolor Wedding Invitation.jpeg" alt="Wedding Invitation" class="invitation-image">
+            </div>
+            
+            <div class="divider"></div>
+            
+            <h3 class="invitation-text">POZIVAMO VAS NA NAŠE VJENČANJE<br>
+                <span class="date-bold">20.09.2025.</span><br>
+            </h3>
+
+            <div class="event-details">
+                <div class="cocktail">
+                    <div class="event-icon">
+                        <img src="./images/glasses.jpeg" alt="Cocktail" width="64" height="64">
+                    </div>
+                    <h3 class="time">15:00</h3>
+                    <p class="event-type-seasons">OKUPLJANJE</p>
+                    <p class="venue">
+                        Caffe bar Mollinary<br>
+                        Šetalište braće Radić 19 br 1<br>
+                        Slavonski Brod
+                        <a href="https://www.google.com/maps/place/Caffe+bar+Mollinary/@45.152674,18.0150109,16.25z/data=!4m6!3m5!1s0x475db9ffbc09b925:0x99b80c24be5e9cdd!8m2!3d45.1526095!4d18.0150255!16s%2Fg%2F11g8kt9rvt?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">Show on Map</a>
+                    </p>
+                </div>
+
+                <div class="ceremony">
+                    <div class="event-icon">
+                        <img src="./images/church.jpeg" alt="Wedding Bells" width="64" height="64">
+                    </div>
+                    <h3 class="time">18:00</h3>
+                    <p class="event-type-seasons">VJENČANJE</p>
+                    <p class="venue">
+                        Crkva sv. Antuna <br>
+                        Trg sv. Antuna 1<br>
+                        Podvinje 
+                    </p>
+                    <a href="https://www.google.com/maps/place/Saint+Anthony%E2%80%99s+Church/@45.1934226,18.0273022,13.71z/data=!4m6!3m5!1s0x475dba62aa101c41:0x42108e6c130afbbe!8m2!3d45.1906199!4d18.0281061!16s%2Fg%2F11c5hntkk5?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">Show on Map</a>
+                </div>
+
+                <div class="reception">
+                    <div class="event-icon">
+                        <img src="./images/party.jpeg" alt="Newlyweds" width="64" height="64">
+                    </div>
+                    <h3 class="time">20:00</h3>
+                    <p class="event-type-seasons">VEČERA</p>
+                    <p class="venue">
+                        Svečana dvorana Kristal<br>
+                        Ulica Vjekoslava Babukića 12<br>
+                        Slavonski Brod
+                    </p>
+                    <a href="https://www.google.com/maps/place/Sve%C4%8Dana+dvorana+Kristal/@45.1670043,18.0067963,16z/data=!4m6!3m5!1s0x475dba1133309fcf:0xc817347d07cce068!8m2!3d45.1676662!4d18.0069572!16s%2Fg%2F11byhlwd19?entry=ttu&g_ep=EgoyMDI1MDYyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-btn">Show on Map</a>
+                </div>
+            </div>
+
+            <div class="rsvp-form">
+                <h2>Molimo potvrdite svoj dolazak do 01.09.2025.</h2>
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <label for="guests">Broj gostiju</label>
+                        <select id="guests" name="guests" class="guest-select" required>
+                            <option value="" disabled selected></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div id="guestNamesContainer" class="guest-names-container">
+                        <!-- Dynamic guest name inputs will be added here -->
+                    </div>
+
+                    <div class="form-group" id="messageGroup" style="display: none;">
+                        <label for="message">Ostavite mladencima poruku</label>
+                        <input type="text" id="message" name="message" placeholder="Napišite poruku za mladence...">
+                    </div>
+
+                    <button type="submit" class="submit-btn">Potvrdi</button>
+                    <div class="confirmation-info" style="text-align:center; margin-top:1rem; color:#000; font-size:0.95rem;">
+                        <br>
+                        U slučaju naknadnih promjena, možete nam se javiti telefonski:
+                        Karla: 097/655 9933<br>
+                        Stipe: 095/740 8071
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="thank-you-modal">
+        <div class="thank-you-modal-content">
+            <h2 class="thank-you-modal-title">Veselimo se tvom dolasku!</h2>
+            <div class="thank-you-modal-hearts">❤️ 🪩 💃 🍾</div>
+            <div class="thank-you-modal-divider"></div>
+            <p class="thank-you-modal-subtitle">Hvala što ćete podijeliti ovaj poseban dan s nama!</p>
+            <button class="thank-you-modal-close" onclick="closeThankYouModal()">Zatvori</button>
+        </div>
+    </div>
+
+    <!-- Validation Modal -->
+    <div id="validationModal" class="validation-modal">
+        <div class="validation-modal-content">
+            <p class="validation-modal-title" id="validationMessage">Molimo unesite imena svih gostiju.</p>
+            <button class="validation-modal-close" onclick="closeValidationModal()">U redu</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
